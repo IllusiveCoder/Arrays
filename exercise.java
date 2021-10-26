@@ -44,6 +44,7 @@ public class exercise
     array_two = new int[10];
   }
   public static void main(String[] args) {
+    //Objekterstellung und Aufrufen der menu()-Methode
     exercise object = new exercise();
     object.menu();
   }
@@ -57,6 +58,7 @@ public class exercise
   }
   public void go_back()
   {
+    //Wird zu Menü zurück gewechselt
     menu();
   }
   public void menu()
@@ -72,7 +74,7 @@ public class exercise
     else if(repeat == true)
     {
       menu_select();
-        start_end = true;
+      start_end = true;
     }
     else
     {
@@ -96,6 +98,7 @@ public class exercise
     }
     
   }
+  //Methode zur Bereinigung des Bildschirms, mittels eines Counters.
   public void menu_select()
   {
     if(counter == 5)
@@ -314,6 +317,7 @@ public class exercise
     number_three = input.nextInt();
     delete_element_three_dimensions_array(number_one,number_two,number_three);
   }
+  //Ausgeben aller Arrays
   void print_all()
   {
     System.out.println("#---------------------------------------------------------------#");
